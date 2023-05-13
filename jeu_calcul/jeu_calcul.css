@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    font-weight:1000;
+    color: antiquewhite;
+}
+body{
+    background-color: rgb(98, 98, 210);
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    flex-direction: column;
+    margin-top:25vh;
+}
+#message{
+    height:40px;
+    width: 140px;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    animation-duration: 0.5s;
+    animation-name:animation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition:0.8s;
+    /* animation-name: disparition; */
+}
+
+p{
+    font-size:12px;
+    margin-left: 50%;
+    transform: translateX(-18%);
+}
+.message{
+    font-size:12px;
+    height:40px;
+    width: 140px;
+    padding-top:15px;
+    background-color:red;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition:0.2s;
+    /* animation-name: disparition; */
+}
+#titre{
+    font-size: 15px;
+    color: antiquewhite;
+    margin-top:20px;
+    margin-left:50px;
+}
+.number{
+text-align: center;
+color: antiquewhite;
+margin-bottom:20px;  
+/* margin-left: 40px; */
+font-size: 30px;
+letter-spacing: 2.5px;
+}
+#numbers{
+    background:none;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid  antiquewhite; 
+    width:150px;
+    padding-bottom:10px;
+    margin-top:20px;
+    margin-left: 50%;
+    transform: translateX(-50%); 
+}
+button{
+    padding:15px 50px;
+    border-radius:10px;
+    border:none;
+    color: antiquewhite;
+    letter-spacing:2px;
+    background-color:rgb(18, 18, 179);
+    margin-top:20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#score{
+    text-align: center;
+    font-size:50px;
+}
+#restart{
+    background:none;
+    border:1px solid antiquewhite;
+}

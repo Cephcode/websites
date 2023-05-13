@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jeu_calcul</title>
+    <link rel="stylesheet" href="jeu_calcul.css" />
+  </head>
+  <body>
+    <div id="container1">
+      <div id="message"></div>
+      <div class="number"><span id="operation"></span><br /></div>
+      <p id="titre">Donner la réponse</p>
+      <div class="reponse">
+        <input type="number" id="numbers" />
+      </div>
+      <div id="button">
+        <button id="validation" onclick="reponse_msg(),operation()">
+          SOUMETRE
+        </button>
+      </div>
+    </div>
+    <div id="container2">
+      <div id="message1">Vous avez perdu</div>
+      <div id="score"></div>
+      <br />
+      <p>score</p>
+      <button
+        id="restart"
+        onclick="container2.style.display='none';container1.style.display='block';score=0;"
+      >
+        Recommencer
+      </button>
+    </div>
+    <script src="jeu_calcul.js"></script>
+  </body>
+</html>

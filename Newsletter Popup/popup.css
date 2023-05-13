@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Open Sans";
+}
+body {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("Assets/Background.png");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(129, 130, 130);
+}
+.card {
+  height: 450px;
+  width: 390px;
+  background-color: white;
+  border-radius: 10px;
+}
+.top {
+  height: 30%;
+  width: 100%;
+  background-color: rgb(70, 70, 254);
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  text-align: center;
+}
+h1 {
+  height: 135px;
+  background: url("Assets/Pattern.png");
+  background-size: cover;
+  font-size: 18px;
+  font-weight: 600;
+}
+#slogan {
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+}
+.text {
+  margin-top: 20px;
+  color: rgb(129, 130, 130);
+}
+.action {
+  width: 100%;
+}
+input {
+  position: relative;
+  margin-top: 20px;
+  margin-left: -20px;
+  width: 32vh;
+  height: 37px;
+  text-align: left;
+  padding-left: 10px;
+  background-color: rgb(249, 253, 253);
+  color: rgb(129, 130, 130);
+  border: 0.1px solid rgb(219, 216, 216);
+  border-radius: 3px;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgb(70, 70, 254);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  margin-left: 6px;
+}
+.advertissement {
+  padding-left: 20px;
+  margin-top: 10px;
+  text-align: left;
+  color: rgb(129, 130, 130);
+}
+.affiche {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+#name {
+  margin-top: 5px;
+  margin-left: -10px;
+  position: relative;
+  color: black;
+}
+.affiche p {
+  position: relative;
+  margin-left: 5px;
+  color: rgb(129, 130, 130);
+}
+.bottom {
+  margin-top: 5px;
+  color: rgb(129, 130, 130);
+}
