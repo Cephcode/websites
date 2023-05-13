@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    background-color:limegreen;
+}
+canvas{
+    margin-top:10px;
+    background-color: rgb(228, 232, 238);
+    box-shadow: 10px 5px rgb(24, 27, 2);
+}
+/* .titre{
+
+} */
+.text{
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    margin-top: 20px;
+    /* height:40px;
+    width:200px; */
+    background-color: rgb(244, 241, 242);
+    padding:10px 32px;
+    border:none;
+    margin-left: 50%;
+    transform:translateX(-50%);
+    border-radius: 2px;;
+    box-shadow: 5px 5px rgb(24, 27, 2);
+ font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+height: 50px;
+}
