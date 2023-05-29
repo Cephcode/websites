@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  width: 100vw;
+  background: #000;
+  color: white;
+  font: 1em sans-serif;
+}
+html {
+  font-size: 16px;
+}
+h1 {
+  font-size: 9vw;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  line-height: 130%;
+}
+h2 {
+  color: rgb(255, 254, 254);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  color: lightgray;
+  font-weight: 300;
+  font-size: 5vw;
+  line-height: 140%;
+}
+
+.logo {
+  width: 35%;
+}
+header {
+  position: fixed;
+  height: 10vh;
+  width: 100vw;
+  padding: 0.8rem;
+  background: #000;
+}
+nav {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.x_menu {
+  height: 100%;
+  width: 65%;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.links {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.links li a {
+  text-decoration: none;
+  color: lightgray;
+  font-weight: lighter;
+}
+
+.yellow {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  background: none;
+  background-color: yellow;
+  color: black;
+}
+.toggler {
+  display: none;
+}
+main {
+  height: auto;
+  width: 100vw;
+  padding: 16vh 0rem 4rem 0rem;
+  z-index: -1;
+}
+
+.description {
+  background-color: rgb(54, 54, 54);
+  display: grid;
+  gap: 2rem;
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(54, 54, 54);
+}
+.social_media {
+  display: flex;
+  gap: 0.5rem;
+}
+header {
+  position: fixed;
+}
+.hero {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.features {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.description {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.contact {
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.logo {
+  width: 50%;
+}
+h2 {
+  font-size: 14px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero_text p {
+  padding-bottom: 3vh;
+}
+.icons {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  place-items: center;
+  gap: 1rem;
+  padding-bottom: 8rem;
+}
+.card .img {
+  width: 100%;
+  height: 30vh;
+  min-height: 20vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.card .img img {
+  height: 100%;
+  width: 100%;
+}
+.card p {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.description {
+  padding: 2rem;
+  grid-template-columns: 1fr;
+}
+.contact {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 1rem;
+}
+footer {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.contact p {
+  padding-bottom: 1rem;
+}
+/* } */
+@media screen and (min-width: 100px) and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  .x_menu {
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    height: 35vh;
+    width: 100vw;
+    max-width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    height: 0;
+    transition: height 1s ease-in-out;
+    background: #000;
+  }
+  .links {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    line-height: 5vh;
+    align-items: center;
+    color: lightgray;
+  }
+  .yellow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .toggler {
+    display: flex;
+  }
+  .open .x_menu {
+    height: 45vh;
+    background: #000;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 15px;
+  }
+  .icons {
+    place-items: center;
+    grid-template-rows: 10vh 10vh;
+    padding-bottom: 10rem;
+  }
+  .x_menu {
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    height: 35vh;
+    width: 100vw;
+    max-width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    height: 0;
+    transition: height 1s ease-in-out;
+    background: #000;
+  }
+  .links {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    line-height: 5vh;
+    align-items: center;
+    color: lightgray;
+  }
+  .yellow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .toggler {
+    display: flex;
+  }
+  .open .x_menu {
+    height: 45vh;
+    background: #000;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .hero_text h1 {
+    font-size: 50px;
+    width: 60vw;
+  }
+  .card .img img {
+    height: auto;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .hero_text p {
+    font-size: 15px;
+    width: 60vw;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  .card .img {
+    height: 60vh;
+  }
+  .x_menu {
+    width: 70%;
+  }
+  .contact .yellow {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 3000px) {
+  .hero_text h1 {
+    font-size: 60px;
+    width: 60vw;
+  }
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .hero_text p {
+    font-size: 18px;
+    width: 54%;
+  }
+  h1 {
+    font-size: 50px;
+    width: auto;
+  }
+  h3 {
+    font-size: 30px;
+  }
+
+  .card .img {
+    height: 55vh;
+  }
+  .features {
+    gap: 1rem;
+  }
+  p {
+    font-size: 19px;
+    font-weight: 100;
+  }
+  .contact h1 {
+    font-size: 35px;
+  }
+  .features {
+    display: flex;
+  }
+  .description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 0;
+  }
+  .icons {
+    height: 40vh;
+  }
+  header {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .card p {
+    padding-bottom: 1rem;
+  }
+  .hero {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .features {
+    padding: 0rem 4rem 0rem 4rem;
+  }
+  .description {
+    padding: 1.5rem 4rem 1.5rem 4rem;
+  }
+  .description h1 {
+    font-size: 35px;
+  }
+  .contact {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .x_menu {
+    width: 70%;
+  }
+  .contact .yellow {
+    margin-bottom: 2rem;
+  }
+}
