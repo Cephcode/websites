@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <link rel="stylesheet" href="toggle.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <div class="left"><h3>Calc</h3></div>
+        <div class="titre">Theme</div>
+        <div class="right">
+          <div class="check">
+            <div class="check1">
+              <input
+                type="checkbox"
+                name="theme_un"
+                id="first"
+                class="bottom"
+              />
+              <label for="first" class="label">1</label>
+            </div>
+            <div class="check2">
+              <input
+                type="checkbox"
+                name="theme_deux"
+                id="second"
+                class="bottom"
+              />
+              <label for="second" class="label">2</label>
+            </div>
+            <div class="check3">
+              <input
+                type="checkbox"
+                name="theme_trois"
+                id="third"
+                class="bottom"
+              />
+              <label for="third" class="label">3</label>
+            </div>
+          </div>
+          <div class="box">
+            <div class="ball"></div>
+          </div>
+        </div>
+      </div>
+      <div id="screen">
+        <span id="affichage"></span>
+      </div>
+      <div class="numbers">
+        <div class="btns">
+          <input type="button" value="7" class="nbr_op" />
+          <input type="button" value="8" class="nbr_op" />
+          <input type="button" value="9" class="nbr_op" />
+          <input type="button" value="DEL" class="blue" id="delete" />
+          <input type="button" value="4" class="nbr_op" />
+          <input type="button" value="5" class="nbr_op" />
+          <input type="button" value="6" class="nbr_op" />
+          <input
+            type="button"
+            value="+"
+            class="operateur nbr_op"
+            id="addition"
+            class="nbr_op"
+          />
+          <input type="button" value="1" class="nbr_op" />
+          <input type="button" value="2" class="nbr_op" />
+          <input type="button" value="3" class="nbr_op" />
+          <input
+            type="button"
+            value="-"
+            class="operateur nbr_op"
+            id="soustraction"
+            class="nbr_op"
+          />
+          <input type="button" value="." id="virgule" class="nbr_op" />
+          <input type="button" value="0" class="nbr_op" />
+          <input
+            type="button"
+            value="/"
+            class="operateur nbr_op"
+            id="division"
+            class="nbr_op"
+          />
+          <input
+            type="button"
+            value="x"
+            class="operateur nbr_op"
+            id="multiplication"
+          />
+          <input type="button" value="Reset" class="blue" id="efface" />
+          <input type="button" value="=" class="operateur" id="egale" />
+        </div>
+      </div>
+    </main>
+    <script src="toggle.js"></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.right {
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+}
+.titre {
+  padding-left: 45%;
+}
+.check {
+  min-height: 35px;
+  display: flex;
+
+  margin-top: -5px;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  z-index: 200;
+}
+.bottom {
+  display: none;
+}
+.box {
+  transform: translateY(-50%);
+  /* min-height: 2vh;
+  min-width: 5vh; */
+  height: 2vh;
+  width: 12vw;
+  background: hsl(223, 31%, 20%);
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  transition: transform 0.3s;
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.ball {
+  height: 3vh;
+  width: 30px;
+  border-radius: 50px;
+  background: hsl(25, 98%, 40%);
+}
+.one {
+  position: absolute;
+  left: 0;
+}
+.two {
+  position: absolute;
+  margin-left: 50%;
+  transform: translatex(-50%);
+}
+.red {
+  position: absolute;
+  left: 50%;
+  transform: translatex(50%);
+}
+/* CSS code for the normal theme */
+.normal-theme {
+  /* Add your styles for the normal theme here */
+  color: white;
+}
+
+/* CSS code for the dark theme */
+.white-theme {
+  /* Add your styles for the dark theme here */
+  background-color: hsl(0, 0%, 90%);
+  color: black;
+}
+
+/* CSS code for the fluorescent theme */
+.fluorescent-theme {
+  /* Add your styles for the fluorescent theme here */
+  background-color: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
