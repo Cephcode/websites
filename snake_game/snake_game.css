@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    flex-wrap:wrap;
+}
+body{
+    height:100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: linear-gradient(rgba(206, 96, 0, 0.778),rgb(122, 63, 0),rgb(132, 11, 11));
+
+    
+}
+canvas{
+    background-color: rgb(59, 14, 14);
+    /* padding: 10px; */
+}
